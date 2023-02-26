@@ -8,11 +8,11 @@ function Landing() {
     fullStack:
       "A full stack developer with skills such as Front-end Languages and Frameworks (HTML, CSS, JavaScript), Backend Technologies and Frameworks (NodeJS, ExpressJS, Django, Flask, C++), Database Management Systems (MySQL, SQL SERVER and PostgreSQL, MongoDB, and Oracle Database), Version Control, and Web Hosting Platforms",
     learner:
-      "I am a passionate learner who is always seeking new knowledge and experiences. For me, learning is not just about gaining information, but about expanding my understanding and developing my abilities. I am naturally curious and motivated to explore a wide range of topics and skills",
+      "A passionate learner who is always seeking new knowledge and experiences. For me, learning is not just about gaining information, but about expanding my understanding and developing my abilities. I am naturally curious and motivated to explore a wide range of topics and skills",
     problem_solver:
-      "I am a problem solver who is always looking for ways to overcome challenges and find solutions. I have a strong analytical mind and enjoy breaking down complex problems into manageable pieces. I am skilled at researching and gathering information, and I am able to think creatively and outside the box to develop innovative solutions.",
+      "A problem solver who is always looking for ways to overcome challenges and find solutions. I have a strong analytical mind and enjoy breaking down complex problems into manageable pieces. I am skilled at researching and gathering information, and I am able to think creatively and outside the box to develop innovative solutions.",
     traveller:
-      "I am a passionate traveler who loves to explore new places, cultures, and experiences. For me, travel is not just a hobby, it's a way of life. I believe that every trip is an opportunity to learn something new, to challenge myself, and to broaden my horizons",
+      "A passionate traveler who loves to explore new places, cultures, and experiences. For me, travel is not just a hobby, it's a way of life. I believe that every trip is an opportunity to learn something new, to challenge myself, and to broaden my horizons",
   };
   const [about, setAbout] = useState(obj.aboutme);
   const [aboutbg, setAboutbg] = useState(
@@ -87,22 +87,35 @@ function Landing() {
             Connect
           </button>
           <div className=" w-7 h-7 lg:w-8 lg:h-8 ml-2 lg:ml-3 mr-1 bg-white rounded-full">
-            <img src="https://img.icons8.com/ios/256/github--v1.png"></img>
+            <a href="https://github.com/ranjeet25" target="_blank">
+              <img src="https://img.icons8.com/ios/256/github--v1.png"></img>
+            </a>
           </div>
           <div className="w-7 h-7 lg:w-8 lg:h-8 mx-1 bg-white rounded-full">
-            <img src="https://img.icons8.com/ios/256/linkedin-circled.png"></img>
+            <a
+              href="https://www.linkedin.com/in/ranjeet-saw-4834a21b0/"
+              target="_blank"
+            >
+              <img src="https://img.icons8.com/ios/256/linkedin-circled.png"></img>
+            </a>
           </div>
           <div className="w-7 h-7 lg:w-8 lg:h-8 mx-1 bg-white rounded-full">
-            <img src="https://img.icons8.com/ios/256/twitter-circled.png"></img>
+            <a href="https://twitter.com/ranjeetsaw_" target="_blank">
+              <img src="https://img.icons8.com/ios/256/twitter-circled.png"></img>
+            </a>
           </div>
           <div className="w-7 h-7 lg:w-8 lg:h-8 mx-1 p-1  bg-white rounded-full ">
-            <img src="https://img.icons8.com/plumpy/256/instagram-new.png"></img>
+            <a href="https://www.instagram.com/imranjeeet/" target="_blank">
+              <img src="https://img.icons8.com/plumpy/256/instagram-new.png"></img>
+            </a>
           </div>
           <div className="w-7 h-7 lg:w-8 lg:h-8 mx-1 bg-white rounded-full">
-            <img
-              className="rounded-full border p-1"
-              src="https://img.icons8.com/glyph-neue/256/medium-logo.png"
-            ></img>
+            <a href="https://ranjeet25.medium.com/" target="_blank">
+              <img
+                className="rounded-full border p-1"
+                src="https://img.icons8.com/glyph-neue/256/medium-logo.png"
+              ></img>
+            </a>
           </div>
         </div>
       </div>

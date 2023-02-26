@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=DM+Sans:wght@400;700&family=Dela+Gothic+One&family=IBM+Plex+Sans:ital,wght@0,400;0,700;1,700&family=Londrina+Solid:wght@100;300;400&family=Marck+Script&family=Mukta:wght@700&family=PT+Sans:ital@0;1&family=Poppins:ital,wght@0,400;1,500&family=Press+Start+2P&family=Quicksand:wght@300;400&family=Raleway:wght@400;700&family=Roboto&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: aliceblue;
+}

@@ -34,10 +34,10 @@ function Projects() {
     Fullstack: [
       {
         srno: "01",
-        name: "Wecare",
+        name: "Grivance Managment Platform ",
         description:
-          "To build A platform to integrate Peoples staying in Remote Villages and Doctors who want to serve People at free of cost of at a nominal price.",
-        link: "https://github.com/ranjeet25/Wecare",
+          "This Platform provides helping hand to students and staff by acknowledging and solving their problems. It maintains the healthy environment for stakeholders of the institute.",
+        link: "https://github.com/ranjeet25/sankalp",
         Tech_Stack: [
           "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
           "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png",
@@ -48,10 +48,10 @@ function Projects() {
       },
       {
         srno: "02",
-        name: "Swachhta Port",
+        name: "TargetCoaching",
         description:
-          "The Caption Generator is an tool that can help you come up with creative and engaging captions for your Instagram posts.",
-        link: "https://github.com/ranjeet25/Swachhta-Port",
+          "TargetCoaching is a Coaching managment which helps owner to manage its branches,teachers students in one platform.",
+        link: "https://github.com/ranjeet25/TargetCoaching",
         Tech_Stack: [
           "https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png",
           "https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png",
@@ -78,12 +78,13 @@ function Projects() {
       },
       {
         srno: "02",
-        name: "Agriculture Production enhancement",
-        description: "comming soon... ",
-        link: "#",
+        name: "ResumeX- A Resume Scanner",
+        description:
+          "ResumeX is a web application which helps job seeker to analyze their resume based on provided job description  ",
+        link: "https://github.com/ranjeet25/resumex",
         Tech_Stack: [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
-          "https://cdn.icon-icons.com/icons2/2667/PNG/512/jupyter_app_icon_161280.png",
+          "https://cdn.worldvectorlogo.com/logos/django.svg",
         ],
       },
     ],
@@ -91,23 +92,27 @@ function Projects() {
     others: [
       {
         srno: "01",
-        name: "TSDW's Website",
-        description: "The official project of TSDW website ",
-        link: "#",
+        name: "Blood4Life ⚡",
+        description:
+          "A Revolutionary way to Donate and Manage Blood at blood donation camps  ",
+        link: "https://github.com/ranjeet25/Blood4Life",
         Tech_Stack: [
-          "https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png",
-          "https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png",
-          "https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png",
-          "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png",
+          "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
+          "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png",
+          "https://img.icons8.com/?size=512&id=INaKcbx5X5uW&format=png",
         ],
       },
       {
         srno: "02",
-        name: "Comming soon",
-        description: " ",
+        name: "Legal contract summarizer",
+        description:
+          "Machine learning model that summarizes the contract and highlights key points",
         link: "#",
         Tech_Stack: [
-          "https://cdn.icon-icons.com/icons2/1581/PNG/512/3668844-clock-pending-transaction-wait_108015.png",
+          "https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png",
+          "https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png",
+          "https://cdn.worldvectorlogo.com/logos/django.svg",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg",
         ],
       },
     ],
@@ -174,7 +179,7 @@ function Projects() {
               );
             }}
           >
-            Data Science
+            Machine Learning
           </button>
           <button
             className="text-white py-4 m-2 bg-base-100 rounded-xl hover:bg-orange-600 active:bg-orange-600 focus:outline-none focus:bg focus:bg-orange-600"

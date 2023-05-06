@@ -14,12 +14,13 @@ function Landing() {
     traveller:
       "A passionate traveler who loves to explore new places, cultures, and experiences. For me, travel is not just a hobby, it's a way of life. I believe that every trip is an opportunity to learn something new, to challenge myself, and to broaden my horizons",
   };
+
   const [about, setAbout] = useState(obj.aboutme);
   const [aboutbg, setAboutbg] = useState(
-    "h-auto lg:h-28 mt-6 py-4 px-4 bg-base-100 text-sm rounded-xl"
+    "h-auto lg:h-28 mt-6 py-4 px-4 shadow-sm text-sm rounded-xl"
   );
   const [info_section, setInfo_section] = useState(
-    "info_section bg-base-200 h-auto lg:h-[60vh] w-auto  lg:w-3/5 px-8 py-16 rounded-xl border-2 border-white"
+    "info_section text-white bg-transparent backdrop-blur-lg h-auto lg:h-[60vh] w-auto  lg:w-3/5 px-8 py-16 rounded-xl  border-2 border-slate-400 "
   );
 
   const eventHandler = (e) => {
@@ -32,7 +33,7 @@ function Landing() {
         " h-auto lg:h-28 mt-6 py-4 px-4 bg-primary text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-purple-700"
+        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-purple-700"
       );
     } else if (res == "I am Problem Solver") {
       setAbout(obj.problem_solver);
@@ -40,7 +41,7 @@ function Landing() {
         " h-auto lg:h-28 mt-6 py-4 px-4 bg-secondary text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-secondary"
+        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-secondary"
       );
     } else if (res == "I am Learner") {
       setAbout(obj.learner);
@@ -48,7 +49,7 @@ function Landing() {
         " text-black h-auto lg:h-28 mt-6 py-4 px-4 bg-yellow-500 text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-yellow-500"
+        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-yellow-500"
       );
     } else {
       setAbout(obj.traveller);
@@ -56,15 +57,15 @@ function Landing() {
         " text-black h-auto lg:h-28 mt-6 py-4 px-4 bg-emerald-500 text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-emerald-700"
+        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-emerald-700"
       );
     }
   };
 
   return (
-    <div className=" min-h-[85vh] lg:h-[90vh] p-2 bg-base-300 flex flex-col justify-center items-center ">
+    <div className=" min-h-[85vh] lg:h-[90vh] p-2 bg-base-200 bg-cover md:bg-[url('https://images.unsplash.com/photo-1562263588-35193ae8ecbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] flex flex-col justify-center items-center ">
       <div className={info_section}>
-        <p>Hey there 👋</p>
+        <p className="text-white">Hey there 👋</p>
         <h2 className="text-white text-4xl  font-bold font-display py-3 ">
           I am Ranjeet Saw
         </h2>
@@ -73,7 +74,7 @@ function Landing() {
           onChange={eventHandler}
         >
           <option disabled selected>
-            Know more About me !!
+            Click to know more About me !!
           </option>
           <option>I am Full stack devloper</option>
           <option>I am Problem Solver</option>

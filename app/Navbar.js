@@ -2,8 +2,8 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar bg-base-100">
-      <div className="navbar-start"></div>
+    <div className="navbar bg-gray-800 bg-transparent backdrop-blur-sm">
+      <div className="navbar-start  bg-transparent backdrop-blur-sm"></div>
 
       <div className="navbar-end">
         <div className="dropdown dropdown-end ">

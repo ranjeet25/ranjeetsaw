@@ -4,9 +4,20 @@ import Heading from "./Heading";
 function Skills() {
   return (
     <div>
-      <div className="bg-base-100 h-auto lg:h-screen flex flex-col justify-around items-center">
+      <div
+        style={{
+          backgroundColor: "#111111",
+          opacity: "1",
+          backgroundImage:
+            "linear-gradient(135deg, #1f1f1f 25%, transparent 25%), linear-gradient(225deg, #1f1f1f 25%, transparent 25%), linear-gradient(45deg, #1f1f1f 25%, transparent 25%), linear-gradient(315deg, #1f1f1f 25%, #111111 25%)",
+          backgroundPosition: "21px 0, 21px 0, 0 0, 0 0",
+          backgroundSize: "21px 21px",
+          backgroundRepeat: "repeat",
+        }}
+        className="bg-black h-auto lg:h-screen flex flex-col justify-around items-center"
+      >
         <Heading heading="My Skills "></Heading>
-        <div className="h-auto  mt-6 py-4 px-4 bg-base-200 text-sm rounded-xl m-2 ">
+        <div className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 ">
           <h4 className="lg:text-lg text-md">
             The future belongs to those who learn more{" "}
             <span className="font-bold text-secondary text-lg">skills</span> and
@@ -16,7 +27,7 @@ function Skills() {
         </div>
         <div className=" w-full lg:h-[60vh] h-auto flex flex-col lg:flex-row justify-center items-start  ">
           {/* skill 1 */}
-          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-base-300 m-4 border-dashed rounded-xl hover:border-2 hover:border-violet-700">
+          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 border-dashed rounded-xl hover:border-2 hover:border-violet-700">
             <h2 className="text-6xl font-bold p-4">01</h2>
             <h4 className="pl-4 text-lg">Full Stack Development</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">
@@ -45,7 +56,7 @@ function Skills() {
             </div>
           </div>
           {/* skill 2 */}
-          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-base-300 m-4 rounded-xl hover:border-2 hover:border-secondary border-dashed">
+          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-secondary border-dashed">
             <h2 className="text-6xl font-bold p-4">02</h2>
             <h4 className="pl-4 text-lg">Data Structure & Algorithms</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">
@@ -70,7 +81,7 @@ function Skills() {
             </div>
           </div>
           {/* skill 3 */}
-          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-base-300 m-4 rounded-xl hover:border-2 hover:border-accent border-dashed">
+          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-accent border-dashed">
             <h2 className="text-6xl font-bold p-4">03</h2>
             <h4 className="pl-4 text-lg">Data Analysis</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">

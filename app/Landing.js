@@ -20,7 +20,7 @@ function Landing() {
     "h-auto lg:h-28 mt-6 py-4 px-4 shadow-sm text-sm rounded-xl"
   );
   const [info_section, setInfo_section] = useState(
-    "info_section text-white bg-transparent backdrop-blur-lg h-auto lg:h-[60vh] w-auto  lg:w-3/5 px-8 py-16 rounded-xl  border-2 border-slate-400 "
+    "info_section text-white bg-transparent backdrop-blur-sm h-auto lg:h-[60vh] w-auto  lg:w-3/5 px-8 py-16 rounded-xl  border-2 border-slate-400 "
   );
 
   const eventHandler = (e) => {
@@ -33,7 +33,7 @@ function Landing() {
         " h-auto lg:h-28 mt-6 py-4 px-4 bg-primary text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-purple-700"
+        "info_section text-white bg-transparent backdrop-blur-sm h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-purple-700"
       );
     } else if (res == "I am Problem Solver") {
       setAbout(obj.problem_solver);
@@ -41,7 +41,7 @@ function Landing() {
         " h-auto lg:h-28 mt-6 py-4 px-4 bg-secondary text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-secondary"
+        "info_section text-white bg-transparent backdrop-blur-sm  h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-secondary"
       );
     } else if (res == "I am Learner") {
       setAbout(obj.learner);
@@ -49,7 +49,7 @@ function Landing() {
         " text-black h-auto lg:h-28 mt-6 py-4 px-4 bg-yellow-500 text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-yellow-500"
+        "info_section text-white bg-transparent backdrop-blur-sm h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-yellow-500"
       );
     } else {
       setAbout(obj.traveller);
@@ -57,13 +57,24 @@ function Landing() {
         " text-black h-auto lg:h-28 mt-6 py-4 px-4 bg-emerald-500 text-sm rounded-xl"
       );
       setInfo_section(
-        "info_section text-white bg-base-200 h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-emerald-700"
+        "info_section text-white bg-transparent backdrop-blur-sm h-auto lg:h-[60vh] w-auto lg:w-3/5 px-8 py-16 rounded-xl border-2 border-emerald-700"
       );
     }
   };
 
   return (
-    <div className=" min-h-[85vh] lg:h-[90vh] p-2 bg-base-200 bg-cover md:bg-[url('https://images.unsplash.com/photo-1562263588-35193ae8ecbb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80')] flex flex-col justify-center items-center ">
+    <div
+      style={{
+        backgroundColor: "#000000",
+        opacity: "1",
+        backgroundImage:
+          "linear-gradient(#1b1b1b 4.2px, transparent 4.2px), linear-gradient(90deg, #1b1b1b 4.2px, transparent 4.2px), linear-gradient(#1b1b1b 2.1px, transparent 2.1px), linear-gradient(90deg, #1b1b1b 2.1px, #000000 2.1px)",
+        backgroundSize: "105px 105px, 105px 105px, 21px 21px, 21px 21px",
+        backgroundPosition:
+          "-4.2px -4.2px, -4.2px -4.2px, -2.1px -2.1px, -2.1px -2.1px",
+      }}
+      className=" min-h-[85vh] lg:h-[100vh] p-2 bg-base-200 bg-cover flex flex-col justify-center items-center "
+    >
       <div className={info_section}>
         <p className="text-white">Hey there 👋</p>
         <h2 className="text-white text-4xl  font-bold font-display py-3 ">

@@ -120,15 +120,24 @@ function Projects() {
 
   const [project, SetProject] = useState(projectObj.frontend);
   const [projectcss, setProjectcss] = useState(
-    "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-base-300 m-4 rounded-xl box-border"
+    "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl box-border"
   );
   const [srnocss, setsrnocss] = useState("text-6xl font-bold p-4");
   const [titlecss, setTitlecss] = useState("pl-4 text-lg");
 
   return (
-    <div className="bg-base-200 h-auto lg:h-screen flex flex-col justify-around items-center">
+    <div
+      style={{
+        backgroundColor: "#000000",
+        opacity: "1",
+        backgroundImage:
+          "radial-gradient( ellipse farthest-corner at 21px 21px , #1b1b1b, #1b1b1b 50%, #000000 50%)",
+        backgroundSize: "21px 21px",
+      }}
+      className="bg-base-200 h-auto lg:h-screen flex flex-col justify-around items-center"
+    >
       <Heading heading="My Projects" bg="bg-base-200"></Heading>
-      <div className="h-auto  mt-6 py-4 px-4 bg-base-300 text-sm rounded-xl m-2 ">
+      <div className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 ">
         <h4 className="lg:text-lg text-md">
           Those who plan do better than those who do not
           <span className="font-bold text-accent text-lg"> plan</span> and even
@@ -137,13 +146,13 @@ function Projects() {
         <p className="text-right">- Winston Churchill </p>
       </div>
       <div className=" w-full lg:h-[60vh] h-auto flex flex-col lg:flex-row justify-center items-start  ">
-        <div className="  w-[90vw] lg:w-1/5 h-4/5 bg-base-300 py-6 m-4  rounded-xl flex flex-col justify-around">
+        <div className="  w-[90vw] lg:w-1/5 h-4/5 bg-black py-6 m-4  rounded-xl flex flex-col justify-around">
           <button
             className="text-white py-4 m-2 bg-base-100 rounded-xl hover:bg-violet-600 active:bg-violet-800 focus:outline-none focus:bg focus:bg-violet-800"
             onClick={() => {
               SetProject(projectObj.frontend);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-base-300 rounded-xl border border-purple-700 m-4"
+                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black rounded-xl border border-purple-700 m-4"
               );
               setsrnocss("text-6xl font-bold p-4 text-white");
               setTitlecss(
@@ -158,7 +167,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.Fullstack);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-base-300 m-4 rounded-xl border border-secondary m-4"
+                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-secondary m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-secondary"
@@ -172,7 +181,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.Data);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-base-300 m-4 rounded-xl border border-accent m-4"
+                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-accent m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-accent"
@@ -186,7 +195,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.others);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-base-300 m-4 rounded-xl border border-orange-600 m-4"
+                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-orange-600 m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-orange-600"

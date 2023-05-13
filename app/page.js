@@ -8,7 +8,6 @@ import Footer from "./Footer";
 export default function Home() {
   return (
     <div className="bg-white">
-      <Navbar></Navbar>
       <Landing></Landing>
       <Skills></Skills>
       <Projects></Projects>

@@ -128,16 +128,16 @@ function Projects() {
   return (
     <div
       style={{
-        backgroundColor: "#000000",
-        opacity: "1",
-        backgroundImage:
-          "radial-gradient( ellipse farthest-corner at 21px 21px , #1b1b1b, #1b1b1b 50%, #000000 50%)",
-        backgroundSize: "21px 21px",
+        background:
+          "radial-gradient(circle, rgba(23,23,23,1) 0%, rgba(23,23,23,1) 100%)",
       }}
       className="bg-base-200 h-auto lg:h-screen flex flex-col justify-around items-center"
     >
       <Heading heading="My Projects" bg="bg-base-200"></Heading>
-      <div className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 ">
+      <div
+        data-aos="fade-left"
+        className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 "
+      >
         <h4 className="lg:text-lg text-md">
           Those who plan do better than those who do not
           <span className="font-bold text-accent text-lg"> plan</span> and even

@@ -2,7 +2,7 @@ import React from "react";
 
 function Navbar() {
   return (
-    <div className="navbar bg-gray-800 bg-transparent backdrop-blur-sm">
+    <div className="navbar bg-black ">
       <div className="navbar-start  bg-transparent backdrop-blur-sm"></div>
 
       <div className="navbar-end">

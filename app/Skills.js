@@ -1,23 +1,29 @@
-import React from "react";
+"use client";
 import Heading from "./Heading";
+import React, { useEffect } from "react";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Skills() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div>
       <div
         style={{
-          backgroundColor: "#111111",
-          opacity: "1",
-          backgroundImage:
-            "linear-gradient(135deg, #1f1f1f 25%, transparent 25%), linear-gradient(225deg, #1f1f1f 25%, transparent 25%), linear-gradient(45deg, #1f1f1f 25%, transparent 25%), linear-gradient(315deg, #1f1f1f 25%, #111111 25%)",
-          backgroundPosition: "21px 0, 21px 0, 0 0, 0 0",
-          backgroundSize: "21px 21px",
-          backgroundRepeat: "repeat",
+          background:
+            "radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(0,0,0,1) 100%)",
         }}
         className="bg-black h-auto lg:h-screen flex flex-col justify-around items-center"
       >
         <Heading heading="My Skills "></Heading>
-        <div className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 ">
+        <div
+          data-aos="fade-left"
+          className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 "
+        >
           <h4 className="lg:text-lg text-md">
             The future belongs to those who learn more{" "}
             <span className="font-bold text-secondary text-lg">skills</span> and
@@ -25,10 +31,19 @@ function Skills() {
           </h4>
           <p className="text-right">- Robert Greene</p>
         </div>
-        <div className=" w-full lg:h-[60vh] h-auto flex flex-col lg:flex-row justify-center items-start  ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="300"
+          className=" w-full lg:h-[60vh] h-auto flex flex-col lg:flex-row justify-center items-start  "
+        >
           {/* skill 1 */}
           <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 border-dashed rounded-xl hover:border-2 hover:border-violet-700">
-            <h2 className="text-6xl font-bold p-4">01</h2>
+            <h2 className="text-6xl font-bold p-4">
+              <img
+                className="h-24"
+                src="https://static.vecteezy.com/system/resources/previews/016/716/181/non_2x/website-3d-icon-png.png"
+              ></img>
+            </h2>
             <h4 className="pl-4 text-lg">Full Stack Development</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">
               I have skill in both front-end and back-end web development. I am
@@ -56,8 +71,17 @@ function Skills() {
             </div>
           </div>
           {/* skill 2 */}
-          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-secondary border-dashed">
-            <h2 className="text-6xl font-bold p-4">02</h2>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="400"
+            className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-secondary border-dashed"
+          >
+            <h2 className="text-6xl font-bold p-4">
+              <img
+                className="h-24"
+                src="https://static.vecteezy.com/system/resources/previews/010/795/086/original/web-development-3d-illustration-png.png"
+              ></img>
+            </h2>
             <h4 className="pl-4 text-lg">Data Structure & Algorithms</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">
               I am Skilled in designing, analyzing, and implementing Data
@@ -81,8 +105,18 @@ function Skills() {
             </div>
           </div>
           {/* skill 3 */}
-          <div className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-accent border-dashed">
-            <h2 className="text-6xl font-bold p-4">03</h2>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="500"
+            className="lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl hover:border-2 hover:border-accent border-dashed"
+          >
+            <h2 className="text-6xl font-bold p-4">
+              {" "}
+              <img
+                className="h-24"
+                src="https://static.vecteezy.com/system/resources/previews/015/153/135/original/data-analytics-3d-icon-design-png.png"
+              ></img>
+            </h2>
             <h4 className="pl-4 text-lg">Data Analysis</h4>
             <p className="px-4 py-4 text-sm h-full lg:h-42">
               I am skilled in data analysis and has expertise in collecting,

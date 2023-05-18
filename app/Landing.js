@@ -1,7 +1,14 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+// importing aos
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Landing() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   var obj = {
     aboutme:
       "I am a third-year Information Technology major at Thakur College of Engineering and Technology in Mumbai.I love to design beautiful websites and also add functionality to websites so that I can help someone to achieve their goal. I do find Data analytic Interesting and currently, I am into it! I love to participate in hackathons and provide solutions using my skills. Other than technical things I do like traveling and nature photography.",
@@ -75,7 +82,18 @@ function Landing() {
       }}
       className=" min-h-[85vh] lg:h-[100vh] p-2 bg-base-200 bg-cover flex flex-col justify-center items-center "
     >
+      <div className="hidden lg:block">
+        <img
+          data-aos="zoom-out"
+          className="absolute right-4 top-1"
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/web-design-interface-4291904-3569936.png?f=webp"
+        ></img>
+      </div>
       <div className={info_section}>
+        <img
+          className=" h-32 lg:hidden"
+          src="https://cdn3d.iconscout.com/3d/premium/thumb/web-design-and-development-3317132-2757104.png"
+        ></img>
         <p className="text-white">Hey there 👋</p>
         <h2 className="text-white text-4xl  font-bold font-display py-3 ">
           I am Ranjeet Saw

@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -83,11 +84,14 @@ function Landing() {
       className=" min-h-[85vh] lg:h-[100vh] p-2 bg-base-200 bg-cover flex flex-col justify-center items-center "
     >
       <div className="hidden lg:block">
-        <img
+        <Image
+          width={420}
+          height={420}
+          loading="lazy"
           data-aos="zoom-out"
           className="absolute right-4 top-1"
           src="https://cdn3d.iconscout.com/3d/premium/thumb/web-design-interface-4291904-3569936.png?f=webp"
-        ></img>
+        ></Image>
       </div>
       <div className={info_section}>
         <img

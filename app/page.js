@@ -1,9 +1,10 @@
-import "./globals.css";
-import Navbar from "./Navbar";
-import Landing from "./Landing";
-import Skills from "./Skills";
-import Projects from "./Projects";
-import Footer from "./Footer";
+import "../style/globals.css";
+import Navbar from "@/components/Navbar";
+import Landing from "@/components/Landing";
+import Skills from "@/components/Skills";
+import Projects from "@/components/Projects";
+import Footer from "@/components/Footer";
+import HireMe from "@/components/HireMe";
 
 export default function Home() {
   return (

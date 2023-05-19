@@ -1,12 +1,21 @@
 "use client";
 import React, { useState } from "react";
 import Heading from "./Heading";
+import Image from "next/image";
+import sankalp from "../public/images/sankalp_ss.jpeg";
+import resumex from "../public/images/resumex.jpeg";
+import targetCoaching from "../public/images/targetCoaching.jpeg";
+import surakshaPort from "../public/images/surakshaPort.png";
+import typoGame from "../public/images/typoGame.jpeg";
+import blood4life from "../public/images/blood4life.png";
 
 function Projects() {
   const projectObj = {
     frontend: [
       {
-        srno: "01",
+        imgsrc:
+          "https://img.freepik.com/free-vector/coming-soon-construction-yellow-background-design_1017-25509.jpg?w=996&t=st=1684521742~exp=1684522342~hmac=7334c424260ea0680f88b6f6729ee7b8330dc80ee088d9b11e25023ae7a9de80",
+        name: "Legal contract summarizer",
         name: "Random Caption Generator",
         description:
           "The Caption Generator is an tool that can help you come up with creative and engaging captions for your Instagram posts. ",
@@ -19,7 +28,7 @@ function Projects() {
         ],
       },
       {
-        srno: "02",
+        imgsrc: typoGame.src,
         name: "Typo - A typing game",
         description:
           "A typing game which has differen level you can practice your typing skill by playing this game",
@@ -33,7 +42,7 @@ function Projects() {
 
     Fullstack: [
       {
-        srno: "01",
+        imgsrc: sankalp.src,
         name: "Grivance Managment Platform ",
         description:
           "This Platform provides helping hand to students and staff by acknowledging and solving their problems. It maintains the healthy environment for stakeholders of the institute.",
@@ -47,7 +56,7 @@ function Projects() {
         ],
       },
       {
-        srno: "02",
+        imgsrc: targetCoaching.src,
         name: "TargetCoaching",
         description:
           "TargetCoaching is a Coaching managment which helps owner to manage its branches,teachers students in one platform.",
@@ -63,7 +72,7 @@ function Projects() {
 
     Data: [
       {
-        srno: "01",
+        imgsrc: surakshaPort.src,
         name: "Suraksha Port",
         description:
           "The problem it mainly focuses on is to do the analysis on the investigation data or the crime records provided by the police station. ",
@@ -77,7 +86,7 @@ function Projects() {
         ],
       },
       {
-        srno: "02",
+        imgsrc: resumex.src,
         name: "ResumeX- A Resume Scanner",
         description:
           "ResumeX is a web application which helps job seeker to analyze their resume based on provided job description  ",
@@ -91,7 +100,7 @@ function Projects() {
 
     others: [
       {
-        srno: "01",
+        imgsrc: blood4life.src,
         name: "Blood4Life ⚡",
         description:
           "A Revolutionary way to Donate and Manage Blood at blood donation camps  ",
@@ -103,7 +112,8 @@ function Projects() {
         ],
       },
       {
-        srno: "02",
+        imgsrc:
+          "https://img.freepik.com/free-vector/coming-soon-construction-yellow-background-design_1017-25509.jpg?w=996&t=st=1684521742~exp=1684522342~hmac=7334c424260ea0680f88b6f6729ee7b8330dc80ee088d9b11e25023ae7a9de80",
         name: "Legal contract summarizer",
         description:
           "Machine learning model that summarizes the contract and highlights key points",
@@ -120,7 +130,7 @@ function Projects() {
 
   const [project, SetProject] = useState(projectObj.frontend);
   const [projectcss, setProjectcss] = useState(
-    "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl box-border"
+    "lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl box-border"
   );
   const [srnocss, setsrnocss] = useState("text-6xl font-bold p-4");
   const [titlecss, setTitlecss] = useState("pl-4 text-lg");
@@ -135,7 +145,7 @@ function Projects() {
     >
       <Heading heading="My Projects" bg="bg-base-200"></Heading>
       <div
-        data-aos="fade-left"
+        data-aos="fade-in"
         className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 "
       >
         <h4 className="lg:text-lg text-md">
@@ -152,7 +162,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.frontend);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black rounded-xl border border-purple-700 m-4"
+                "lg:w-1/4 w-[90vw] h-auto py-6 bg-black rounded-xl border border-purple-700 m-4"
               );
               setsrnocss("text-6xl font-bold p-4 text-white");
               setTitlecss(
@@ -167,7 +177,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.Fullstack);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-secondary m-4"
+                "lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl border border-secondary m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-secondary"
@@ -181,7 +191,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.Data);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-accent m-4"
+                "lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl border border-accent m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-accent"
@@ -195,7 +205,7 @@ function Projects() {
             onClick={() => {
               SetProject(projectObj.others);
               setProjectcss(
-                "lg:w-1/4 w-[90vw] h-4/5 py-6 bg-black m-4 rounded-xl border border-orange-600 m-4"
+                "lg:w-1/4 w-[90vw] h-auto py-6 bg-black m-4 rounded-xl border border-orange-600 m-4"
               );
               setTitlecss(
                 "pl-4 text-lg underline underline-offset-4 decoration-orange-600"
@@ -206,9 +216,15 @@ function Projects() {
           </button>
         </div>
 
-        {/* Project 1 */}
+        {/*  ####################### 
+                                    Project 0 
+                                              ####################### */}
+
         <div className={projectcss}>
-          <h2 className={srnocss}>{project[0].srno}</h2>
+          <h2 className={srnocss}>
+            <img className=" h-32 rounded-lg" src={project[0].imgsrc}></img>
+          </h2>
+
           <h4 className={titlecss}>{project[0].name}</h4>
           <p className="px-4 py-2 text-sm h-24 ">{project[0].description}</p>
           <div className="flex flex-row justify-start items-center mb-4">
@@ -243,9 +259,14 @@ function Projects() {
             })}
           </div>
         </div>
-        {/* Project 2 */}
+
+        {/*  ####################### 
+                                    Project 1 
+                                              ####################### */}
         <div className={projectcss}>
-          <h2 className={srnocss}>{project[1].srno}</h2>
+          <h2 className={srnocss}>
+            <img className=" h-32 rounded-md" src={project[1].imgsrc}></img>
+          </h2>
           <h4 className={titlecss}>{project[1].name}</h4>
           <p className="px-4 py-2 text-sm h-24 ">{project[1].description}</p>
           <div className="flex flex-row justify-start items-center mb-4">

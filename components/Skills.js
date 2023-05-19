@@ -15,13 +15,13 @@ function Skills() {
       <div
         style={{
           background:
-            "radial-gradient(circle, rgba(52,52,52,1) 0%, rgba(0,0,0,1) 100%)",
+            "radial-gradient(circle, rgba(20,20,18,18) 0%, rgba(6,6,10,10) 100%)",
         }}
         className="bg-black h-auto lg:h-screen flex flex-col justify-around items-center"
       >
         <Heading heading="My Skills "></Heading>
         <div
-          data-aos="fade-left"
+          data-aos="fade-in"
           className="h-auto  mt-6 py-4 px-4 bg-black text-sm rounded-xl m-2 "
         >
           <h4 className="lg:text-lg text-md">
